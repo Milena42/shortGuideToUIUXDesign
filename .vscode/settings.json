@@ -14,5 +14,9 @@
     "typescript.format.semicolons": "insert",
     "[vue]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vue.server.includeLanguages": ["vue", "markdown"],
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }

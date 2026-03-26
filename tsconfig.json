@@ -1,0 +1,13 @@
+{
+    "include": ["./examples/**/*", "./.vitepress/**/*", "./pages/**/*", "*.md"],
+    "exclude": ["./node_modules/**/*"],
+    "vueCompilerOptions": {
+        "vitePressExtensions": [".md"]
+    },
+    "compilerOptions": {
+        "paths": {
+            "/*": ["./*"]
+        },
+        "skipLibCheck": true
+    }
+}

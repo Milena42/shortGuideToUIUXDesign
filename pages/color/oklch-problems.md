@@ -90,12 +90,14 @@
 (пишут же, что до 0.15 насыщенность более-менее безопасна)
 
 Во второй строке увеличили насыщенность, сохраняя светлоту:
+
 <OklchProblemDemo lightness="0.9" chroma="0.03"/>
 <OklchProblemDemo lightness="0.9" chroma="0.13"/>
 
 Вам не кажется, что розовый во второй строке какой-то темный? Можете нажать F12 и проверить, в CSS действительно указана одинаковая светлота.
 
 Еще 2 строки, на этот раз они выглядят одинаково (если у вас не одинаково, браузеры внедрили новый алгоритм, наконец-то):
+
 <OklchProblemDemo lightness="0.9" chroma="0.13"/>
 
 <div class="oklch-problem-demo-palette">
@@ -141,6 +143,7 @@
 Тут верхняя строка и зеленый проходят проверку на контрастность (граничное значение, но допустимо). А розовый и синий - нет. Хотя с сохранением светлоты должны были.
 
 По-моему, контрастность - самое главное в дизайне, и при вылетах надо, сохраняя светлоту и тон, уменьшить насыщенность до максимальной существующей:
+
 <OklchProblemDemo lightness="0.9" chroma="0.03"/>
 
 <div class="oklch-problem-demo-palette">
@@ -162,10 +165,10 @@
     <p style="color: oklch(0.9 0.047 260)">Типа текст</p>
 </div>
 
-К сожалению, это приходится делать вручную или через библиотеки (например, в chroma.js можно проверять цвет на существование функцией [clipped](https://gka.github.io/chroma.js/#color-clipped))
+К сожалению, это приходится делать вручную или через библиотеки (например, в chroma.js можно проверять цвет на существование функцией <a href="https://gka.github.io/chroma.js/#color-clipped">clipped</a>)
 
 <script setup lang="ts">
-    import OklchProblemDemo from '/examples/OklchProblemDemo.vue';
-    import OklchDiv from '/examples/OklchDiv.vue';
-    import ColorModels3d from '/examples/ColorModels3d.vue';
+import ColorModels3d from '/examples/ColorModels3d.vue';
+import OklchDiv from '/examples/OklchDiv.vue';
+import OklchProblemDemo from '/examples/OklchProblemDemo.vue';
 </script>

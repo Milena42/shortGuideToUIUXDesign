@@ -1,17 +1,19 @@
 {
-  "devDependencies": {
-    "@types/chroma-js": "^3.1.2",
-    "@types/three": "^0.183.1",
-    "vitepress": "^2.0.0-alpha.15",
-    "vue": "^3.5.26"
-  },
-  "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
-  },
-  "dependencies": {
-    "chroma-js": "^3.2.0",
-    "three": "^0.182.0"
-  }
+    "devDependencies": {
+        "@types/chroma-js": "^3.1.2",
+        "@types/three": "^0.183.1",
+        "vitepress": "^2.0.0-alpha.15",
+        "vue": "^3.5.26"
+    },
+    "scripts": {
+        "dev": "vitepress dev",
+        "build": "vitepress build",
+        "preview": "vitepress preview",
+        "typecheck": "vue-tsc --noEmit"
+    },
+    "dependencies": {
+        "chroma-js": "^3.2.0",
+        "three": "^0.182.0",
+        "vue-tsc": "^3.2.6"
+    }
 }
