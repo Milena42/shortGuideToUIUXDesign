@@ -1,0 +1,82 @@
+import { defineConfig } from "vitepress";
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  title: "Краткое руководство по UI и UX дизайну",
+  description:
+    'Сборник практических советов по дизайну пользовательских интерфейсов. Кратко, конкретно и без "делай как чувствуешь"',
+  lang: "ru-RU",
+
+  themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+
+    sidebar: [
+      {
+        base: "/pages",
+        items: [{ text: "О чем эта книга", link: "/" }],
+      },
+      {
+        text: "Цвет",
+        base: "/pages/color",
+        items: [
+          { text: "Насыщенность", link: "/chroma" },
+          { text: "Эмоциональное восприятие цвета", link: "/emotions" },
+          { text: "Проблемы OKLCH", link: "/oklch-problems" },
+        ],
+      },
+      {
+        text: "Текст",
+        base: "/pages/text",
+        items: [
+          { text: "Выравнивание текста", link: "/align" },
+          { text: "С засечками или без", link: "/serif-vs-sans" },
+          {
+            text: "Как понять, шрифт хороший или плохой",
+            link: "/is-font-good-or-bad",
+          },
+        ],
+      },
+      {
+        base: "/pages",
+        items: [
+          {
+            text: "Самые частые заблуждения дизайнеров",
+            link: "/common-mistakes",
+          },
+          {
+            text: "Почему отступы - это важно",
+            link: "/why-paddings-margins-gaps-are-important",
+          },
+          { text: "Иконки", link: "/icons" },
+          { text: "Глассморфизм", link: "/glassmorphism" },
+          { text: "Адаптивность", link: "/adaptivity" },
+          { text: "Сетка", link: "/grid" },
+        ],
+      },
+    ],
+
+    socialLinks: [
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    ],
+
+    docFooter: {
+      prev: "Предыдущая",
+      next: "Дальше",
+    },
+
+    outline: {
+      label: "На этой странице",
+    },
+
+    returnToTopLabel: "Наверх",
+
+    sidebarMenuLabel: "Содержание",
+
+    notFound: {
+      title: "Страница не найдена",
+      quote: "",
+      linkText: "на главную",
+      link: "/pages",
+    },
+  },
+});
