@@ -7,7 +7,7 @@ export default defineConfig({
     description:
         'Сборник практических советов по дизайну пользовательских интерфейсов. Кратко, конкретно и без "делай как чувствуешь"',
     lang: 'ru-RU',
-    srcDir: '../pages',
+    srcDir: 'pages',
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
