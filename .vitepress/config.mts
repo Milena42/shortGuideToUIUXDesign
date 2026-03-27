@@ -7,18 +7,18 @@ export default defineConfig({
     description:
         'Сборник практических советов по дизайну пользовательских интерфейсов. Кратко, конкретно и без "делай как чувствуешь"',
     lang: 'ru-RU',
+    srcDir: '../pages',
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
 
         sidebar: [
             {
-                base: '/pages',
-                items: [{ text: 'О чем эта книга', link: '/' }],
+                items: [{ text: 'О чем эта книга', link: '' }],
             },
             {
                 text: 'Цвет',
-                base: '/pages/color',
+                base: '/color',
                 items: [
                     { text: 'Насыщенность', link: '/chroma' },
                     { text: 'Эмоциональное восприятие цвета', link: '/emotions' },
@@ -27,7 +27,7 @@ export default defineConfig({
             },
             {
                 text: 'Текст',
-                base: '/pages/text',
+                base: '/text',
                 items: [
                     { text: 'Выравнивание текста', link: '/align' },
                     { text: 'С засечками или без', link: '/serif-vs-sans' },
@@ -38,7 +38,6 @@ export default defineConfig({
                 ],
             },
             {
-                base: '/pages',
                 items: [
                     {
                         text: 'Самые частые заблуждения дизайнеров',
@@ -81,7 +80,7 @@ export default defineConfig({
             title: 'Страница не найдена',
             quote: '',
             linkText: 'на главную',
-            link: '/pages',
+            link: '/',
         },
     },
 });
