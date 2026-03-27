@@ -1,5 +1,5 @@
 {
-    "include": ["./examples/**/*", "./.vitepress/**/*", "./pages/**/*", "*.md"],
+    "include": ["./examples/**/*", "./.vitepress/**/*", "./**/*.md", "*.md"],
     "exclude": ["./node_modules/**/*"],
     "vueCompilerOptions": {
         "vitePressExtensions": [".md"]
