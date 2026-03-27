@@ -13,7 +13,7 @@ export default defineConfig({
 
         sidebar: [
             {
-                items: [{ text: 'О чем эта книга', link: '' }],
+                items: [{ text: 'О чем эта книга', link: '/' }],
             },
             {
                 text: 'Цвет',
