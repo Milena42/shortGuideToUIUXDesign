@@ -79,7 +79,7 @@ export default defineConfig({
             title: 'Страница не найдена',
             quote: '',
             linkText: 'на главную',
-            link: '/',
+            link: '/index.html',
         },
     },
 });
