@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: '/shortGuideToUIUXDesign/',
     title: 'Краткое руководство по\u00A0UI и UX дизайну',
     description:
         'Сборник практических советов по дизайну пользовательских интерфейсов. Кратко, конкретно и без "делай как чувствуешь"',
